@@ -3,6 +3,7 @@ What is JavaScript ?
 JavaScript is a Scripting Language.
 It is a single-threaded programming language. It runs Code
 line by line.
+JavaScript is a Dynamically type language.
 
 HTML - Create Page Strucure
 CSS - Add Style
