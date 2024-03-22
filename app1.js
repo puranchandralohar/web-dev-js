@@ -236,8 +236,3 @@ let num8 = 10;
 // String + Number = String
 
 //  + concatenation operator
-
-
-
-
-
