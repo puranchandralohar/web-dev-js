@@ -25,6 +25,7 @@
 // console.log("Hello".includes("l"));
 // console.log("Hello".includes("o", 4));
 // console.log("Hello".includes("o", 2));
+// console.log("Hello".includes("e", 0));
 // console.log("Hello".includes("H", 1));
 
 

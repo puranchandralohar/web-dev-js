@@ -180,3 +180,8 @@
 // Using var, we can reassign and redeclare the variable
 // Using let, we can reassign the variable but cannot redeclare the variable
 // Using const, we cannot reassign and redeclare the variable
+
+// Types of Errors
+// 1. ReferenceError
+// 2. TypeError
+// 3. SyntaxError
