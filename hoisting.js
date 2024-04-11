@@ -75,10 +75,10 @@
 // Arrow Function
 
 // let sayHello = () => {
-//   return "Hello";    // Implicit Return
+//   return "Hello";    // Explicit Return
 // };
 
-// let sayHello = () => "Hello"; // Explicit Return
+// let sayHello = () => "Hello"; // Implicit Return
 
 // // => - Arrow Function , Fat Arrow
 
