@@ -160,3 +160,103 @@
 // console.log(arr);
 // console.log(arr.length);
 // console.log(arr[0]);
+
+
+
+
+// Multidimensional Array
+
+// let arr = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// console.log(arr);
+// console.log(arr[0]);
+// console.log(arr[1][1]);
+// console.log(arr[2][0]);
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// console.log(arr);
+// console.log(String(arr) === "1,2,3,4,5");
+
+
+// console.log([1, 2] + [3, 4]);
+// console.log([1,2,].length);
+// console.log([1,2,,]);
+// console.log([,,3,4]);
+// console.log([1,2,] + [3,4]);
+// console.log([1,2] + [,3,4]);
+
+
+
+// console.log([1, 2] + 3);
+// console.log([1, 2] + "3");
+// console.log([] + 1);
+// console.log('' + 1);
+// console.log([7] + 1);
+// console.log([7] + 1 + 2);
+
+
+// console.log([] == []);
+// console.log([2] == [2]);
+
+
+
+// Array Methods
+
+// 1. join()
+// 2. reverse()
+// 3. slice()
+// 4. splice()
+// 5. concat()
+// 6. indexOf()
+// 7. lastIndexOf()
+// 8. includes()
+// 9. find()
+// 10. findIndex()
+// 11. filter()
+// 12. map()
+// 13. reduce()
+
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+
+// delete arr[1];
+// console.log(arr);
+
+// console.log(arr[1]);
+
+// let removedElements = arr.splice(1, 1);
+// console.log(removedElements);
+
+// arr.splice(1, 2);
+// console.log(arr);
+// console.log(arr.length);
+
+// arr.splice(1, 1, "Sheetal");
+// console.log(arr);
+
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+
+// arr.splice(1, 2, "Sheetal", "Sushmita");
+// console.log(arr);
+
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.splice(0, 2 , 6, 7, 8);
+// console.log(arr);
+
+// arr.splice(0, 0, 6, 7, 8);
+// console.log(arr);
+
+// arr.splice(-1, 0, 6, 7, 8);
+// console.log(arr);
