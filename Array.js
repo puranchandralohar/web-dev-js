@@ -224,6 +224,8 @@
 // 13. reduce()
 
 
+// splice()
+
 // let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
 
 // delete arr[1];
@@ -260,3 +262,195 @@
 
 // arr.splice(-1, 0, 6, 7, 8);
 // console.log(arr);
+
+
+
+
+
+// slice()
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+
+// console.log(arr.slice(1, 3));
+// console.log(arr.slice(2, 4));
+// console.log(arr.slice(1));
+// console.log(arr.slice(-2));
+// console.log(arr.slice(-2, 4));
+
+
+// concat()
+
+// let arr = [1, 2];
+// let arr1 = [3, 4];
+// console.log(arr.concat(arr1));
+
+
+// let arr = [1, 2];
+// console.log(arr.concat(3, 4));
+// console.log(arr.concat([3, 4]));
+// console.log(arr.concat([3, 4], [5, 6]));
+// console.log(arr.concat([3, 4], 5, 6));
+
+
+
+// indexOf()
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+// console.log(arr.indexOf("Raj"));
+
+
+// lastIndexOf()
+
+// let arr = ["Riya", "Raj", "Trupti", "Raj", "Sapna", "Raj"];
+// console.log(arr.indexOf("Raj"));
+// console.log(arr.lastIndexOf("Raj"));
+
+
+// includes()
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+// console.log(arr.includes("Raj"));
+// console.log(arr.includes("Sheetal"));
+
+
+// let arr = [NaN];
+// console.log(arr.indexOf(NaN));
+// console.log(arr.includes(NaN));
+
+
+// let arr = [1, 2, 3, undefined, 4, 5];
+// console.log(arr.indexOf(NaN));
+// console.log(arr.indexOf(6));
+// console.log(arr.indexOf(undefined));
+
+
+
+// find()
+
+// let arr = [
+//     { name: "Riya", age: 20 },
+//     { name: "Raj", age: 30 },
+//     { name: "Trupti", age: 40 },
+//     { name: "Punam", age: 50 },
+//     { name: "Sapna", age: 60 }
+// ];
+
+// let user = arr.find(element => element.age === 40);
+// console.log(user);
+// console.log(user.name);
+
+// let result = arr.find(function (element) {
+//     return element.age === 20;
+// });
+// console.log(result);
+
+
+// findIndex()
+
+// let arr = [
+//     { name: "Riya", age: 20 },
+//     { name: "Raj", age: 30 },
+//     { name: "Trupti", age: 40 },
+//     { name: "Punam", age: 50 },
+//     { name: "Sapna", age: 60 }
+// ];
+
+// let index = arr.findIndex(element => element.age === 40);
+// console.log(index);
+
+// let index = arr.findIndex((element) => element.name === "Riya");
+// console.log(index);
+
+
+// reverse()
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+// console.log(arr.reverse());
+
+
+// join()
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+// console.log(arr.join());
+// console.log(arr.join(" "));
+// console.log(arr.join(", "));
+// console.log(arr.join("-"));
+
+
+//Try same example using for loop
+// let str = "Tahira"; // arihaT
+// console.log(str.split("").reverse().join(""));
+
+
+// Homework
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+// Output: ["ayiR", "jaR", "itpurT", "manuP", "anpaS"]
+
+
+
+
+// Read about map, filter, reduce
+
+// map()
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let newArr = arr.map((element) => element * 2);
+// console.log(newArr);
+
+// let newArr = arr.map((element, index) => element * index); // [1*0, 2*1, 3*2, 4*3, 5*4]
+// console.log(newArr);
+
+
+// filter()
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let newArr = arr.filter((element) => element % 2 === 0);
+// console.log(newArr);
+
+// let newArr = arr.filter((element, index) => index % 2 === 0);
+// console.log(newArr);
+
+
+// reduce()
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let sum = arr.reduce(function (accumulator, element) {
+//     return accumulator + element;
+// }, 0);
+// 0+1=1, 1+2=3, 3+3=6, 6+4=10, 10+5=15
+// console.log(sum);
+
+// let sum = arr.reduce((accumulator, element) => accumulator + element, 0);
+// console.log(sum);
+
+// let sum = arr.reduce(function (accumulator, element, index) {
+//     return accumulator + element + index;
+// }, 0);
+// 0+1+0=1, 1+2+1=4, 4+3+2=9, 9+4+3=16, 16+5+4=25
+// console.log(sum);
+
+
+// sort()
+
+// let arr = [5, 3, 8, 1, 2, 4];
+// console.log(arr.sort());
+
+// let arr = ["Riya", "Raj", "Trupti", "Punam", "Sapna"];
+// console.log(arr.sort());
+// console.log(arr.sort().reverse());
+
+
+
+arr = [
+  { age: 12, name: "Khan" },
+  { age: 20, name: "sajal" },
+];
+let user = arr.find((element) => {
+  if (element.age === 12) {
+    return element.name;
+  }
+});
+console.log(user);
