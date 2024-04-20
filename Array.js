@@ -420,7 +420,7 @@
 // let sum = arr.reduce(function (accumulator, element) {
 //     return accumulator + element;
 // }, 0);
-// 0+1=1, 1+2=3, 3+3=6, 6+4=10, 10+5=15
+// // 0+1=1, 1+2=3, 3+3=6, 6+4=10, 10+5=15
 // console.log(sum);
 
 // let sum = arr.reduce((accumulator, element) => accumulator + element, 0);
@@ -443,14 +443,74 @@
 // console.log(arr.sort().reverse());
 
 
+// every()
 
-arr = [
-  { age: 12, name: "Khan" },
-  { age: 20, name: "sajal" },
-];
-let user = arr.find((element) => {
-  if (element.age === 12) {
-    return element.name;
-  }
-});
-console.log(user);
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.every((element) => element > 0);
+// console.log(result);
+
+// let result1 = arr.every((element) => element > 1);
+// console.log(result1);
+
+
+// some()
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.some((element) => element > 4);
+// console.log(result);
+
+// let result1 = arr.some((element) => element > 5);
+// console.log(result1);
+
+
+// forEach()
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.forEach((element) => console.log(element));
+
+// arr.forEach((element, index) => console.log(element, index));
+
+// arr.forEach((element, index, array) => console.log(element, index, array));
+
+
+// fill()
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.fill(0);
+// console.log(arr);
+
+// arr.fill(0, 1, 3);
+// console.log(arr);
+
+// arr.fill(0, 1);
+// console.log(arr);
+
+// arr.fill("a", 1, 3);
+// arr.fill("b", 3);
+// console.log(arr);
+
+
+// Array.isArray()
+
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(Array.isArray(arr));
+
+// let arr1 = "Riya";
+// console.log(Array.isArray(arr1));
+
+// let arr2 = { name: "Riya" };
+// console.log(Array.isArray(arr2));
+
+// let arr3 = 10;
+// console.log(Array.isArray(arr3));
+
+// let arr4 = null;
+// console.log(Array.isArray(arr4));
+
+// let arr5 = true;
+// console.log(Array.isArray(arr5));
