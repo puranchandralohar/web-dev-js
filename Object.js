@@ -55,17 +55,17 @@
 
 
 
-// let fName = "Vaishnavi";
+let fName = "Vaishnavi";
 
-// let user2 = {
-//     [fName]: "Anjali",
-// };
+let user2 = {
+    [fName]: "Anjali",
+};
 
-// console.log(user2);
+// console.log(typeof Object.keys(user2));
+console.log(user2);
 // console.log(user2.fName);
-// console.log(user2.Vaishnavi);
-
-
+console.log(user2[fName]);
+console.log(user2.Vaishnavi);
 
 
 // let fruit = "apple";
