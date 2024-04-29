@@ -1,5 +1,29 @@
-// // Object
-// // 1.Object Literal
+// Data Types in JavaScript
+// Primitive Data Types - Number, String, Boolean, Undefined, Null, Symbol, BigInt
+// Non-Primitive Data Types - Object, Array, Function
+
+
+// Object - Object is a non-primitive data type in JavaScript. 
+// It is a collection of key-value pairs. It is a reference data type.
+
+// Four ways to create an object in JavaScript:
+// 1. Object Literal
+// 2. Constructor Function
+// 3. Object.create() method
+// 4. Class
+
+//  1.Object Literal
+
+    // let student = {};  //Empty Object
+    // console.log(typeof student);
+
+    // let student = {
+    //     name:"Puran",
+    //     age: 16,
+    //     "permanet address" :"Bengal",
+    // }
+
+    // console.log(student);
 
 // const user = {
 //     name: "Puran",
@@ -124,11 +148,11 @@
 
 // console.log(this,"outside");
 
-function a(){
-    console.log(this, "inside a function");
-}
+// function a(){
+//     console.log(this, "inside a function");
+// }
 
-a();
+// a();
 
 
 // user.addition(2, 3);
