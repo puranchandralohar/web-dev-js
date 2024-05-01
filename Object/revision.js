@@ -220,8 +220,8 @@ const obj1 = {
     // obj2.age = 30;
     // obj2.address.permanent = "Delhi";
 
-    console.log(obj1);
-    console.log(obj2);
+    // console.log(obj1);
+    // console.log(obj2);
 
     // Methods, Date function, Symbol
 
@@ -233,6 +233,29 @@ const obj1 = {
     // Task - Explore about structuredClone() method in JavaScript
     // and perform a deep copy.
 
+    // Snake Game Functionallity
+    // value = 0;
+    // ladder = value will increase 10 times
+    // snake = value will decrease to 0
+    // move = 
+    // it will generate random number between 1 to 6, and add the number to value
+
+
+// const snakeGame ={
+//     value:0,
+//     ladder(){
+//         return this.value = this.value + 10; 
+//     },
+//     snake(){
+//         return this.value = 0;
+//     },
+//     move(){
+//         let random = Math.floor(Math.random() * 7);
+//         return this.value = this.value + random;
+//     }
+// }
+
+// console.log(snakeGame.ladder());
 
 
 
