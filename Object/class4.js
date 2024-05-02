@@ -48,6 +48,12 @@ let passout = {
 
 
 // function createStudent(name,age){
+    const student = {
+        name :name,
+        age:age,
+    }
+
+    return student
 //     return {
 //         name:name,
 //         age:age,   
@@ -69,9 +75,9 @@ let student1 = createStudent("Sangeeta",18);
 let student3 = createStudent("Eram",1);
 
 
-console.log(student1,"student1");
+// console.log(student1,"student1");
 // console.log(student2);
-console.log(student3,"student3");
+// console.log(student3,"student3");
 
 
 // student1.printDetails = printing.printDetails;
@@ -88,3 +94,37 @@ console.log(student3,"student3");
 
 // Object.create() method - 
 // It creates a new object, using an existing object as the prototype of the newly created object.
+
+// Object.seal() - It prevents new properties from being added to it 
+// and marks all existing properties as non-configurable.
+//  Values of present properties can still be changed as long as they are writable.
+
+const obj = {
+    
+    age:18
+}
+
+console.log(obj.name)
+
+// Object.seal(obj);
+// obj.name = "Nisha";
+// obj.age = 20;
+// delete obj.age;
+// obj.address = "Delhi";
+
+// const newObj = Object.entries(obj);
+
+// [ [ 'name', 'Sangeeta' ], [ 'age', 18 ] ];
+
+// for(let i=0;i<newObj.length;i++){
+//     let key = newObj[i][0];
+//     let value = newObj[i][1];
+//     console.log(key,value); 
+// }
+
+
+
+
+
+
+
