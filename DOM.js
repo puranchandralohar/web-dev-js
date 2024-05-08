@@ -13,4 +13,11 @@ console.log('DOM.js loaded');
 
 // document.querySelector("#red").style.backgroundColor = "red";
 
-console.log(document.querySelectorAll(".box"));
+// console.log(document.querySelectorAll(".box"));
+
+// document.querySelectorAll(".box").style.backgroundColor = "green";  // This will not work
+
+document.querySelectorAll(".box").forEach(elem => {
+    console.log(elem);
+    // elem.style.backgroundColor = "green";
+})
