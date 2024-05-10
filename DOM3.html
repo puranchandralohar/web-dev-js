@@ -16,12 +16,19 @@
         <p>I am para</p>
     </div> -->
 
-    <div class="first">
 
-    </div>
-    <div class="first">
+
+    <!-- <h1 class="heading" id="head"><span>This is my heading</span></h1>
+    <h1 id="head" class="heading">
+        <span>This is my heading</span>
+    </h1> -->
+
+    <h1 class="heading">
+
+    </h1>
+    <h1 class="heading">
         
-    </div>
+    </h1>
     <script>
         // let myList = document.getElementById("myList");
         // let aboutLi = myList.children[1];
@@ -52,10 +59,10 @@
 
 
 
-        let firstDiv = document.querySelectorAll("div")[0];
-        let secondDiv = document.querySelectorAll("div")[1];
+        let heading1 = document.querySelectorAll(".heading")[0];
+        let heading2 = document.querySelectorAll(".heading")[1];
 
-        let isEqual = firstDiv.isEqualNode(secondDiv);
+        let isEqual = heading1.isEqualNode(heading2);
         console.log(isEqual);
     </script>
 </body>
