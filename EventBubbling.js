@@ -102,7 +102,7 @@ const child = document.querySelector('.child');
 // parent.addEventListener(
 //   "click",
 //   (e) => {
-//     // e.stopPropagation();
+//     e.stopPropagation();
 //     console.log("parent capturing");
 //   },
 //   { once: true, capture: true}
@@ -111,7 +111,7 @@ const child = document.querySelector('.child');
 // child.addEventListener(
 //   "click",
 //   (e) => {
-//     // e.stopPropagation();
+//     e.stopPropagation();
 //     console.log("child capturing");
 //   },
 //   { once: true, capture: true}
@@ -130,23 +130,44 @@ const child = document.querySelector('.child');
 
 // setTimeout(() => {
 //     grandParent.removeEventListener("click", printGrandParent);
-// }, 2000)
+// }, 5000)
 
 
 // To remove the element after a given time using a button
 
-const button = document.querySelector('#btn');
+// const button = document.querySelector('#btn');
 
-function printGrandParent(){
-    console.log('grandParent bubbling');
-}
+// function printGrandParent(){
+//     console.log('grandParent bubbling');
+// }
 
-grandParent.addEventListener("click", printGrandParent);
+// grandParent.addEventListener("click", printGrandParent);
 
-function removeGrandParent(){
-    setTimeout(() => {
-        grandParent.removeEventListener("click", printGrandParent);
-    }, 2000)
-}
+// function removeListener() {
+//     setTimeout(() => {
+//         grandParent.removeEventListener("click", printGrandParent);
+//     }, 5000)
+// }
 
-button.addEventListener('click', removeGrandParent);
+// btn.addEventListener("click", removeListener);
+
+
+
+// MOUSE EVENTS
+
+// grandParent.addEventListener("mouseover", () => {
+//     console.log("hovering");
+// })
+
+// grandParent.addEventListener("mouseenter", () => {
+//     console.log("hovering");
+// })
+
+// grandParent.addEventListener("mouseout", () => {
+//   console.log("hovering");
+// });
+
+// grandParent.addEventListener("mouseleave", () => {
+//     console.log("hovering");
+// })
+
