@@ -52,7 +52,9 @@
 // let childNode = parentNode.removeChild(childNode);
 
 // let langEl = document.querySelector("ul");
-// langEl.removeChild(langEl.lastElementChild); // Removes the last child of the ul element.
+// let removedChild = langEl.removeChild(langEl.firstElementChild); // Removes the first child of the ul element.
+// let removedChild = langEl.removeChild(langEl.children[1]); // Removes the second child of the ul element.
+
 
 
 // Remove all the children of the ul element.
@@ -75,16 +77,3 @@
 // newLang.innerHTML = 'Python';
 // langEl.insertBefore(newLang, langEl.firstElementChild); // Inserts the newLang before the second child of the ul element.
 // langEl.insertBefore(newLang, langEl.children[1]);
-
-
-// insertAfter() method
-
-let langEl = document.querySelector('#language');
-
-function insertAfter(newNode, existingNode) {
-    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
-}
-
-let newLang = document.createElement('li');
-newLang.innerHTML = 'Python';
-insertAfter(newLang, langEl.lastElementChild);

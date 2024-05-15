@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .message {
+            color: red;
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .message::first-letter {
+            color: blue;
+            font-size: 30px;
+        }
+
+        .box {
+            width: 100px;
+            height: 150px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p class="message">Lorem ipsum dolor sit.</p> -->
+
+    <!-- <div class="box"></div> -->
+
+    <!-- <a href="https://www.google.com" id="link">Google</a> -->
+
+    <!-- <input type="text" id="input"> -->
+
+    <ul id="list">
+        <li><a id="home">Home</a></li>
+        <li><a id="about">About</a></li>
+        <li><a id="services">Services</a></li>
+    </ul>
+    <script>
+        // getComputedStyle() method
+
+        // let message = document.querySelector('.message');
+        
+        // let style = getComputedStyle(message);
+        
+        // console.log(style.color);
+        
+        // let style = getComputedStyle(message, '::first-letter');
+        // console.log(style.color, style.fontSize);
+
+
+        // className property
+
+        // let message = document.querySelector('.message');
+        // console.log(message.className);
+        
+        // message.className += ' new-class';
+        // console.log(message.className);
+
+        // message.classList.add("new-class");
+        // console.log(message.className);
+
+        // message.classList.add("new-class", "new-class2", "new-class3");
+        // console.log(message.className);
+
+        // message.classList.remove("new-class2");
+        // console.log(message.className);
+
+        // message.classList.replace("new-class3", "new-class4");
+        // console.log(message.className);
+
+        // let checkClassName = message.classList.contains("new-class2");
+        // console.log(checkClassName);
+
+        // message.classList.toggle("new-class2");
+
+
+
+        // offsetWidth, offsetHeight, clientWidth, clientHeight
+
+        // let box = document.querySelector('.box');
+        // let width = box.offsetWidth;
+        // let height = box.offsetHeight;
+        // console.log(width, height);
+
+        // let width = box.clientWidth;
+        // let height = box.clientHeight;
+        // console.log(width, height);
+
+
+
+        //preventDefault() method
+
+        // let link = document.querySelector('#link');
+
+        // link.addEventListener('click', function(e) {
+        //     console.log('Link clicked');
+        //     e.preventDefault();
+        // });
+
+
+        // keydown, keyup, keypress events
+
+        // let input = document.querySelector('#input');
+
+        // input.addEventListener('keydown', function(e) {
+        //     console.log(e.key, e.code);
+        // });
+
+        // input.addEventListener('keyup', function(e) {
+        //     console.log(e.key, e.code);
+        // });
+
+        // input.addEventListener('keypress', function(e) {
+        //     console.log(e.key, e.code);
+        // });
+
+
+        // focus, blur events
+
+        // let input = document.querySelector('#input');
+
+        // input.addEventListener('focus', function(e) {
+        //     // console.log('Input focused');
+        //     e.target.style.background = 'yellow';
+        // });
+
+        // input.addEventListener('blur', function(e) {
+        //     // console.log('Input blurred');
+        //     e.target.style.background = '';
+        // });
+
+
+        // Event delegation
+
+        // let home = document.querySelector('#home');
+        // home.addEventListener('click', function(e) {
+        //     console.log('Home clicked');
+        // });
+
+        // let about = document.querySelector('#about');
+        // about.addEventListener('click', function(e) {
+        //     console.log('About clicked');
+        // });
+
+        // let services = document.querySelector('#services');
+        // services.addEventListener('click', function(e) {
+        //     console.log('Services clicked');
+        // });
+
+        let list = document.querySelector('#list');
+
+        list.addEventListener('click', function(e) {
+            let target = e.target;
+            if(target.id === 'home') {
+                console.log('Home clicked');
+            } else if(target.id === 'about') {
+                console.log('About clicked');
+            } else if(target.id === 'services') {
+                console.log('Services clicked');
+            }
+        });
+
+        // Homework - Write the above code using switch case
+
+        // What is event target?
+        </script>
+</body>
+</html>
