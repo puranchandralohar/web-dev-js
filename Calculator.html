@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            max-width: 450px;
+            background-color: rgb(243, 237, 195);
+        }
+
+        #display {
+            height: 50px;
+            background-color: rgb(31, 35, 11);
+            color: white;
+            font-size: 30px;
+            text-align: right;
+        }
+
+        .buttons {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .btn {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="display"></div>
+        <div class="buttons">
+            <div class="btn">AC</div>
+            <div class="btn">*</div>
+            <div class="btn">/</div>
+            <div class="btn">del</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn">=</div>
+        </div>
+    </div>
+
+    <script>
+        let show = document.getElementById('display');
+        let buttons = Array.from(document.getElementsByClassName('btn'));
+
+        buttons.map((btn) => {
+            btn.addEventListener('click', value);
+        })
+
+        function value(e) {
+            let key = e.target.innerText;
+
+            if (key === 'AC') {
+                show.innerText = '';
+            } else if (key === '=') {
+                show.innerText = eval(show.innerText);
+            } else if (key === 'del') {
+                show.innerHTML = show.innerText.slice(0, -1);
+            } else {
+                show.innerText += key;
+            }
+        }
+    </script>
+</body>
+</html>
