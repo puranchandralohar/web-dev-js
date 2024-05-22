@@ -71,7 +71,7 @@
 
 
 
-// isNaN() - Checks if the value is NaN
+// isNaN() - Checks if the value is NaN and check after being converted into number
 
 // console.log(NaN);
 // console.log(isNaN(NaN));
@@ -80,7 +80,8 @@
 // console.log(isNaN('Hello'));
 // console.log(isNaN('10Hello'));
 
-// isFinite() - Checks if the value is a finite number
+// isFinite() - Checks if the value is a finite number and first converting the value to a number if necessary
+// and false if the given value is NaN, Infinity, or -Infinity after being converted to a number; otherwise, true.
 
 // console.log(isFinite(10));
 // console.log(isFinite('10'));
