@@ -1,5 +1,7 @@
 // Recursion - Function Calling itself
 // 1. Base condition - stop the function calling
+// 2. Recursive condition - function calling itself
+
 // inside function body
 
 // function calling(){
