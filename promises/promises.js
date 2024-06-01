@@ -11,39 +11,43 @@
 
 // How to create a Promise - using Promise constructor
 
-let isParty = function (result) {
-  return new Promise(function (resolve, reject) {
-    // let party = false;
-    if (result) {
-      resolve("Party is on");
-    } else {
-      reject("Party is off");
-    }
-  });
-};
+// let isParty = function (result) {
+//   return new Promise(function (resolve, reject) {
+//     // let party = false;
+//     if (result) {
+//       resolve("Party is on");
+//     } else {
+//       reject("Party is off");
+//     }
+//   });
+// };
 
-let isGiftRecieved = function () {
-  return new Promise(function (resolve, reject) {
-    let gift = true;
-    if (gift) {
-      resolve(true);
-    } else {
-      reject(false);
-    }
-  });
-};
+// let isGiftRecieved = function () {
+//   return new Promise(function (resolve, reject) {
+//     let gift = true;
+//     if (gift) {
+//       resolve(true);
+//     } else {
+//       reject(false);
+//     }
+//   });
+// };
 
-isGiftRecieved()
-  .then((result) => {
-    console.log(result);
-    return isParty(result);
-  })
-  .then((result) => {
-    console.log(result, "result");
-  })
-  .catch((error) => {
-    if (!error) {
-      console.log("No Gift");
-    }
-    console.log(error, "error");
-  });
+// isGiftRecieved()
+//   .then((result) => {
+//     console.log(result);
+//     return isParty(result);
+//   })
+//   .then((result) => {
+//     console.log(result, "result");
+//   })
+//   .catch((error) => {
+//     if (!error) {
+//       console.log("No Gift");
+//     }
+//     console.log(error, "error");
+//   });
+
+
+
+
