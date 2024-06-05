@@ -20,19 +20,19 @@
 // let key = `32e25ddb7aff17520c56f00c709a091e`
 // // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
-// button.addEventListener("click",()=>{
-//     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${key}`)
-//     .then((responce)=>{
-//         console.log(responce);
-//         return responce.json();
-//     })
-//     .then((data)=>{
-//         console.log(data);
-//         console.log(data.name);
-//         console.log(data.main.temp);
-//         show.innerHTML = `City Name: ${data.name} <br> Temperature: ${data.main.temp}`;
-//     })
-// })
+button.addEventListener("click",()=>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${key}`)
+    .then((responce)=>{
+        console.log(responce);
+        return responce.json();
+    })
+    .then((data)=>{
+        console.log(data);
+        console.log(data.name);
+        console.log(data.main.temp);
+        show.innerHTML = `City Name: ${data.name} <br> Temperature: ${data.main.temp}`;
+    })
+})
 
 
 

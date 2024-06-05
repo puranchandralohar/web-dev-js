@@ -64,12 +64,20 @@ var phone = {
     }
 }
 
-let res = phone.printPrice;
-console.log(res)
+var laptop = {
+    company:"HP",
+    price:70000,
+}
 
-
-// let res = phone.printPrice.bind(phone,"Puran");
+// let res = phone.printPrice;
 // res();
+
+
+let res = phone.printPrice.bind(phone);
+let res1 = phone.printPrice.bind(laptop);
+
+res();
+res1();
 
 // Bind- it will return a function
 // Bind- crete a funtion and store it in a variable and call it later
@@ -87,6 +95,8 @@ console.log(res)
 
 // res()
 
+// let res = function(){
+//     console.log(this.price);   //window.price
+// }
 
-
-
+// res()
